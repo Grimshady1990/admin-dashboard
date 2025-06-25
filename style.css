@@ -6,7 +6,24 @@ html, body{
 body {
     height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 500px 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr 1fr;
     border: 10px solid red;
+    gap:5px;
+    
+}
+
+#header-container {
+    border: 5px solid blue;
+    grid-area: 1/2/1/5;
+}
+
+#nav-container{
+    border: 5px solid violet;
+    grid-area:1/1/5/2;
+}
+
+#main-container {
+    border: 5px solid yellow;
+    grid-area: 2/2/5/5;
 }
