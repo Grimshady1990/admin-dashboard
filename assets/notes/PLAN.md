@@ -2,7 +2,7 @@
 
 This project is designed to test my grid skills, this means the layout should be made using grid where possible
 
-# Part 1
+# Part 1 ✅
 
 Part 1 is going to be building the first layer of the layout this will consist of 3 main sections
 

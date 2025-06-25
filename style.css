@@ -4,7 +4,7 @@ html, body{
 }
 
 body {
-    height: 100vh;
+    height: 99vh;
     display: grid;
     grid-template-columns: 500px 1fr 1fr 1fr;
     grid-template-rows: 0.5fr 1fr 1fr 1fr;
@@ -13,17 +13,63 @@ body {
     
 }
 
+/* Header Selectors */
+
 #header-container {
     border: 5px solid blue;
     grid-area: 1/2/1/5;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr;
 }
+
+#header-top {
+    border: 5px solid green;
+}
+#header-bottom {
+    border: 5px solid turquoise;
+}
+
+/* Nav Selectors */
 
 #nav-container{
     border: 5px solid violet;
     grid-area:1/1/5/2;
+
+    display: grid;
+    grid-template-rows: 0.3fr 1fr 1fr;
 }
+
+#nav-title {
+    border: 5px solid orange;
+}
+
+#nav-top {
+    border: 5px solid purple;
+}
+
+#nav-bottom {
+    border: 5px solid slateblue;
+}
+
+/* Main Selectors */
 
 #main-container {
     border: 5px solid yellow;
     grid-area: 2/2/5/5;
+    display: grid;
+    grid-template-columns: 1fr 500px;
 }
+
+#main-left{
+    border: 5px solid teal;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 1fr 1fr 1fr;
+}
+
+#main-right {
+    border: 5px solid lightcoral;
+}
+
+
