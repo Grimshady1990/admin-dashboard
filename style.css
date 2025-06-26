@@ -13,6 +13,8 @@ body {
     
 }
 
+
+
 /* Header Selectors */
 
 #header-container {
@@ -89,6 +91,7 @@ body {
 
 #nav-title {
     background-color: darkgoldenrod;
+    
 }
 #nav-home {
     background-color: cornflowerblue;
@@ -116,6 +119,18 @@ body {
 }
 #nav-privacy {
     background-color: yellowgreen;
+}
+
+.nav-icons {
+    height: 50px
+}
+
+#orbit-icon {
+    height: 100px;
+}
+
+.nav-container {
+    display: flex;
 }
 
 
