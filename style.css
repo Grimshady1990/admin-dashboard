@@ -42,6 +42,11 @@ body {
 #username-sml {
     background-color: fuchsia;
 }
+
+.profile-pics{
+    height: 80px;
+    border-radius: 50px;
+}
 /* Header Bottom Selectors */
 #header-bottom {
     border: 5px solid turquoise;
@@ -78,6 +83,9 @@ body {
     grid-row: span 2;
 }
 
+#profile-pic-lrg{
+    height:110px;
+}
 
 /* Nav Selectors */
 
