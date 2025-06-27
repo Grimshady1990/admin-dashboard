@@ -1,4 +1,5 @@
-html, body{
+html,
+body {
     padding: 0;
     margin: 0;
 }
@@ -9,8 +10,8 @@ body {
     grid-template-columns: 500px 1fr 1fr 1fr;
     grid-template-rows: 0.5fr 1fr 1fr 1fr;
     border: 10px solid red;
-    gap:5px;
-    
+    gap: 5px;
+
 }
 
 
@@ -30,23 +31,28 @@ body {
     display: grid;
     grid-template-columns: 1fr 100px 100px 300px;
 }
+
 #search-bar {
     background-color: darkolivegreen;
 }
+
 #notification-bell {
     background-color: teal;
 }
+
 #profile-icon-sml {
     background-color: beige;
 }
+
 #username-sml {
     background-color: fuchsia;
 }
 
-.profile-pics{
+.profile-pics {
     height: 80px;
     border-radius: 50px;
 }
+
 /* Header Bottom Selectors */
 #header-bottom {
     border: 5px solid turquoise;
@@ -59,16 +65,18 @@ body {
     grid-area: 1/1/3/2;
     background-color: orchid;
 }
+
 #hi-there {
     background-color: wheat;
 }
+
 #username-lrg {
     grid-area: 2/2/3/3;
     background-color: lavender;
 }
 
 #btn-new {
-    
+
     background-color: salmon;
     grid-row: span 2;
 }
@@ -83,15 +91,15 @@ body {
     grid-row: span 2;
 }
 
-#profile-pic-lrg{
-    height:110px;
+#profile-pic-lrg {
+    height: 110px;
 }
 
 /* Nav Selectors */
 
-#nav-container{
+#nav-container {
     border: 5px solid violet;
-    grid-area:1/1/5/2;
+    grid-area: 1/1/5/2;
 
     display: grid;
     grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr 2fr 1fr 1fr 10fr;
@@ -99,32 +107,41 @@ body {
 
 #nav-title {
     background-color: darkgoldenrod;
-    
+
 }
+
 #nav-home {
     background-color: cornflowerblue;
 }
+
 #nav-profile {
     background-color: darkblue;
 }
+
 #nav-messages {
     background-color: lightsalmon;
 }
+
 #nav-history {
     background-color: lawngreen;
 }
+
 #nav-tasks {
     background-color: aqua;
 }
+
 #nav-communities {
     background-color: purple;
 }
+
 #nav-settings {
     background-color: red;
 }
+
 #nav-support {
     background-color: peachpuff;
 }
+
 #nav-privacy {
     background-color: yellowgreen;
 }
@@ -145,6 +162,20 @@ body {
 
 /* Main Selectors */
 
+#news1,
+#news2,
+#news3 {
+    border-bottom: 5px solid gainsboro;
+
+}
+.news-bar1{
+    margin: 30px;
+}
+
+.main-icons {
+    height: 50px;
+}
+
 #main-container {
     border: 5px solid yellow;
     grid-area: 2/2/5/5;
@@ -152,7 +183,7 @@ body {
     grid-template-columns: 1fr 500px;
 }
 
-#main-left{
+#main-left {
     border: 5px solid teal;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -162,12 +193,12 @@ body {
 
 
 
-#main-left-head{
+#main-left-head {
     background-color: blueviolet;
     grid-area: 1/1/2/3;
 }
 
-.main-left{
+.main-left {
     background-color: aquamarine;
     gap: 5px;
     display: grid;
@@ -186,36 +217,43 @@ body {
     grid-template-rows: 100px 1fr 100px 1fr;
 }
 
-#main-right-head1{
+#main-right-head1 {
     background-color: burlywood;
 }
 
 #news-bar1 {
-    background-color:crimson;
+    background-color: crimson;
     display: grid;
     grid-template-rows: repeat(3, 1fr);
 }
+
 #main-right-head2 {
     background-color: chartreuse;
 }
+
 #news-bar2 {
     background-color: darkmagenta;
     display: grid;
     grid-template-rows: repeat(4, 1fr);
 }
+
 .news-bar2 {
-    display:grid;
+    display: grid;
     grid-template-columns: 200px 1fr;
 }
+
 #icon1 {
     background-color: indigo;
 }
+
 #icon2 {
     background-color: rgb(130, 0, 102);
 }
+
 #icon3 {
     background-color: rgb(0, 130, 87);
 }
+
 #icon4 {
     background-color: rgb(2, 0, 130);
 }
@@ -223,12 +261,15 @@ body {
 #user1 {
     background-color: rgb(150, 105, 181);
 }
+
 #user2 {
     background-color: rgb(84, 128, 81);
 }
+
 #user3 {
     background-color: rgb(65, 71, 132);
 }
+
 #user4 {
     background-color: rgb(125, 67, 78);
 }
@@ -236,14 +277,11 @@ body {
 #news1 {
     background-color: indigo;
 }
+
 #news2 {
     background-color: rgb(7, 130, 0);
 }
+
 #news3 {
     background-color: rgb(0, 11, 130);
 }
-
-
-
-
-

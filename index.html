@@ -1,155 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Admin Dashboard</title>
 </head>
+
 <body>
 
-    
-        <div id="header-container">
-            <div class="header-container" id="header-top">
-                <div class="header-top" id="search-bar">
-                   <img id="search-icon" class="nav-icons" src="./assets/Icons/magnify.svg" alt="Search Icon">
-                   <input type="search">
-                </div>
-                <div class="header-top" id="notification-bell">
 
-                    <img src="./assets/Icons/bell-ring.svg" alt="notification-bell" id="notification-icon" class="nav-icons">
-                    
-                </div>
-                <div class="header-top" id="profile-icon-sml">
-
-                    <img src="./assets/Icons/profile2.jpg" alt="user profile picture" class="profile-pics" id="profile-pic-sml">
-                    
-                </div>
-                <div class="header-top" id="username-sml">
-                    <h2 id="header-top-username">Frankie Thomas</h2>
-                </div>
+    <div id="header-container">
+        <div class="header-container" id="header-top">
+            <div class="header-top" id="search-bar">
+                <img id="search-icon" class="nav-icons" src="./assets/Icons/magnify.svg" alt="Search Icon">
+                <input type="search">
             </div>
-            <div class="header-container" id="header-bottom">
-                <div class="header-bottom" id="profile-icon-lrg">
-                    <img src="./assets/Icons/profile2.jpg" alt="user profile picture" id="profile-pic-lrg" class="profile-pics">
-                </div>
-                <div class="header-bottom" id="hi-there">
-                    <h4 id="hi-there-txt">Hi there,</h4>
-                </div>
-                <div class="header-bottom" id="username-lrg">
-                    <h1 id="username-txt-lrg">Frankie Thomas (@Frank)</h1>
-                </div>
-                <div class="header-bottom" id="btn-new">
-                    <button class="buttons">New</button>
-                </div>
-                <div class="header-bottom" id="btn-upload">
-                    <button class="buttons">Upload</button>
-                </div>
-                <div class="header-bottom" id="btn-share">
-                    <button class="buttons">Share</button>
-                </div>
+            <div class="header-top" id="notification-bell">
+
+                <img src="./assets/Icons/bell-ring.svg" alt="notification-bell" id="notification-icon"
+                    class="nav-icons">
 
             </div>
-        </div>
-        <div id="nav-container">
-            <div class="nav-container" id="nav-title">
-                <img id="orbit-icon" class="nav-icons" src="./assets/Icons/orbit.svg" alt="Orbit Icon"> 
-                <h1 id="nav-title-txt" class="nav-txt">Dashboard</h1>
+            <div class="header-top" id="profile-icon-sml">
+
+                <img src="./assets/Icons/profile2.jpg" alt="user profile picture" class="profile-pics"
+                    id="profile-pic-sml">
+
             </div>
-            <div class="nav-container" id="nav-home">
-                <img src="./assets/Icons/home.svg" alt="Home Icon" id="home-icon" class="nav-icons">
-                <h1 id="nav-home-txt" class="nav-txt">Home</h1>
-            </div>
-            <div class="nav-container" id="nav-profile">
-                <img src="./assets/Icons/shield-account.svg" alt="profile icon" id="profile-icon" class="nav-icons">
-                <h1 id="nav-profile-txt" class="nav-txt">Profile</h1>
-            </div>
-            <div class="nav-container" id="nav-message">
-                <img src="./assets/Icons/message.svg" alt="Messages Icon" id="messages-icon" class="nav-icons">
-                <h1 id="nav-message-txt" class="nav-txt">Messages</h1>
-            </div>
-            <div class="nav-container" id="nav-history">
-                <img src="./assets/Icons/history.svg" alt="History Icon" id="history-icon" class="nav-icons">
-                <h1 id="nav-history-txt" class="nav-txt">History</h1>
-            </div>
-            <div class="nav-container" id="nav-tasks">
-                <img src="./assets/Icons/file-multiple.svg" alt="Tasks Icon" id="tasks-icon" class="nav-icons">
-                <h1 id="nav-task-txt" class="nav-txt">Tasks</h1>
-            </div>
-            <div class="nav-container" id="nav-communities">
-                <img src="./assets/Icons/account-group.svg" alt="Communities Icon" id="communities-icon" class="nav-icons">
-                <h1 id="nav-communities-txt" class="nav-txt">Communities</h1>
-            </div>
-            <div class="nav-container" id="nav-settings">
-                <img src="./assets/Icons/tools.svg" alt="Settings Icon" id="settings-icon" class="nav-icons">
-                <h1 id="nav-settings-txt" class="nav-txt">Settings</h1>
-            </div>
-            <div class="nav-container" id="nav-support">
-                <img src="./assets/Icons/face-agent.svg" alt="Support Icon" id="support-icon" class="nav-icons">
-                <h1 id="nav-support-txt" class="nav-txt">Support</h1>
-            </div>
-            <div class="nav-container" id="nav-privacy">
-                <img src="./assets/Icons/lock.svg" alt="Privacy Icon" id="privacy-icon" class="nav-icons">
-                <h1 id="nav-privacy-txt" class="nav-txt">Privacy</h1>
+            <div class="header-top" id="username-sml">
+                <h2 id="header-top-username">Frankie Thomas</h2>
             </div>
         </div>
-        <div id="main-container">
-            <div class="main-container" id="main-left">
-                <div id="main-left-head"></div>
-                <div id="project1" class="main-left">
-                    <div class="main-text" id="text1"></div>
-                    <div class="bookmarks" id="bookmark1"></div>
+        <div class="header-container" id="header-bottom">
+            <div class="header-bottom" id="profile-icon-lrg">
+                <img src="./assets/Icons/profile2.jpg" alt="user profile picture" id="profile-pic-lrg"
+                    class="profile-pics">
+            </div>
+            <div class="header-bottom" id="hi-there">
+                <h4 id="hi-there-txt">Hi there,</h4>
+            </div>
+            <div class="header-bottom" id="username-lrg">
+                <h1 id="username-txt-lrg">Frankie Thomas (@Frank)</h1>
+            </div>
+            <div class="header-bottom" id="btn-new">
+                <button class="buttons">New</button>
+            </div>
+            <div class="header-bottom" id="btn-upload">
+                <button class="buttons">Upload</button>
+            </div>
+            <div class="header-bottom" id="btn-share">
+                <button class="buttons">Share</button>
+            </div>
+
+        </div>
+    </div>
+    <div id="nav-container">
+        <div class="nav-container" id="nav-title">
+            <img id="orbit-icon" class="nav-icons" src="./assets/Icons/orbit.svg" alt="Orbit Icon">
+            <h1 id="nav-title-txt" class="nav-txt">Dashboard</h1>
+        </div>
+        <div class="nav-container" id="nav-home">
+            <img src="./assets/Icons/home.svg" alt="Home Icon" id="home-icon" class="nav-icons">
+            <h1 id="nav-home-txt" class="nav-txt">Home</h1>
+        </div>
+        <div class="nav-container" id="nav-profile">
+            <img src="./assets/Icons/shield-account.svg" alt="profile icon" id="profile-icon" class="nav-icons">
+            <h1 id="nav-profile-txt" class="nav-txt">Profile</h1>
+        </div>
+        <div class="nav-container" id="nav-message">
+            <img src="./assets/Icons/message.svg" alt="Messages Icon" id="messages-icon" class="nav-icons">
+            <h1 id="nav-message-txt" class="nav-txt">Messages</h1>
+        </div>
+        <div class="nav-container" id="nav-history">
+            <img src="./assets/Icons/history.svg" alt="History Icon" id="history-icon" class="nav-icons">
+            <h1 id="nav-history-txt" class="nav-txt">History</h1>
+        </div>
+        <div class="nav-container" id="nav-tasks">
+            <img src="./assets/Icons/file-multiple.svg" alt="Tasks Icon" id="tasks-icon" class="nav-icons">
+            <h1 id="nav-task-txt" class="nav-txt">Tasks</h1>
+        </div>
+        <div class="nav-container" id="nav-communities">
+            <img src="./assets/Icons/account-group.svg" alt="Communities Icon" id="communities-icon" class="nav-icons">
+            <h1 id="nav-communities-txt" class="nav-txt">Communities</h1>
+        </div>
+        <div class="nav-container" id="nav-settings">
+            <img src="./assets/Icons/tools.svg" alt="Settings Icon" id="settings-icon" class="nav-icons">
+            <h1 id="nav-settings-txt" class="nav-txt">Settings</h1>
+        </div>
+        <div class="nav-container" id="nav-support">
+            <img src="./assets/Icons/face-agent.svg" alt="Support Icon" id="support-icon" class="nav-icons">
+            <h1 id="nav-support-txt" class="nav-txt">Support</h1>
+        </div>
+        <div class="nav-container" id="nav-privacy">
+            <img src="./assets/Icons/lock.svg" alt="Privacy Icon" id="privacy-icon" class="nav-icons">
+            <h1 id="nav-privacy-txt" class="nav-txt">Privacy</h1>
+        </div>
+    </div>
+    <div id="main-container">
+        <div class="main-container" id="main-left">
+            <div id="main-left-head">
+                <h2 id="main-content-header">Your Projects</h2>
+            </div>
+            <div id="project1" class="main-left">
+                <div class="main-text" id="text1">
+                    <h2 class="project-header">text here</h2>
+                    <p class="project-text">more text here</p>
                 </div>
-                <div id="project2" class="main-left">
-                    <div class="main-text" id="text2"></div>
-                    <div class="bookmarks" id="bookmark2"></div>
-                </div>
-                <div id="project3" class="main-left">
-                    <div class="main-text" id="text3"></div>
-                    <div class="bookmarks" id="bookmark3"></div>
-                </div>
-                <div id="project4" class="main-left">
-                    <div class="main-text" id="text4"></div>
-                    <div class="bookmarks" id="bookmark4"></div>
-                </div>
-                <div id="project5" class="main-left">
-                    <div class="main-text" id="text5"></div>
-                    <div class="bookmarks" id="bookmark5"></div>
-                </div>
-                <div id="project6" class="main-left">
-                    <div class="main-text" id="text6"></div>
-                    <div class="bookmarks" id="bookmark6"></div>
+                <div class="bookmarks" id="bookmark1">
+                    <img src="./assets/Icons/star-plus-outline.svg" alt="star icon" id="star-icon" class="main-icons">
+                    <img src="./assets/Icons/eye-plus-outline.svg" alt="watch-icon" id="watch-icon" class="main-icons">
+                    <img src="./assets/Icons/source-branch.svg" alt="share icon" id="share-icon" class="main-icons">
                 </div>
             </div>
-            <div class="main-container" id="main-right">
-                <div class="main-right" id="main-right-head1"></div>
-                <div class="main-right" id="news-bar1">
-                    <div class="news-bar1" id="news1"></div>
-                    <div class="news-bar1" id="news2"></div>
-                    <div class="news-bar1" id="news3"></div>
+            <div id="project2" class="main-left">
+                <div class="main-text" id="text2">
+                    <h2 class="project-header">text here</h2>
+                    <p class="project-text">more text here</p>
                 </div>
-                <div class="main-right" id="main-right-head2"></div>
-                <div class="main-right" id="news-bar2">
-                    <div class="news-bar2" id="news4">
-                        <div class="news-icon" id="icon1"></div>
-                        <div class="news-username" id="user1"></div>
+                <div class="bookmarks" id="bookmark2">
+                    <img src="./assets/Icons/star-plus-outline.svg" alt="star icon" id="star-icon" class="main-icons">
+                    <img src="./assets/Icons/eye-plus-outline.svg" alt="watch-icon" id="watch-icon" class="main-icons">
+                    <img src="./assets/Icons/source-branch.svg" alt="share icon" id="share-icon" class="main-icons">
+                </div>
+            </div>
+            <div id="project3" class="main-left">
+                <div class="main-text" id="text3">
+                    <h2 class="project-header">text here</h2>
+                    <p class="project-text">more text here</p>
+                </div>
+                <div class="bookmarks" id="bookmark3">
+                    <img src="./assets/Icons/star-plus-outline.svg" alt="star icon" id="star-icon" class="main-icons">
+                    <img src="./assets/Icons/eye-plus-outline.svg" alt="watch-icon" id="watch-icon" class="main-icons">
+                    <img src="./assets/Icons/source-branch.svg" alt="share icon" id="share-icon" class="main-icons">
+                </div>
+            </div>
+            <div id="project4" class="main-left">
+                <div class="main-text" id="text4">
+                    <h2 class="project-header">text here</h2>
+                    <p class="project-text">more text here</p>
+                </div>
+                <div class="bookmarks" id="bookmark4">
+                    <img src="./assets/Icons/star-plus-outline.svg" alt="star icon" id="star-icon" class="main-icons">
+                    <img src="./assets/Icons/eye-plus-outline.svg" alt="watch-icon" id="watch-icon" class="main-icons">
+                    <img src="./assets/Icons/source-branch.svg" alt="share icon" id="share-icon" class="main-icons">
+                </div>
+            </div>
+            <div id="project5" class="main-left">
+                <div class="main-text" id="text5">
+                    <h2 class="project-header">text here</h2>
+                    <p class="project-text">more text here</p>
+                </div>
+                <div class="bookmarks" id="bookmark5">
+                    <img src="./assets/Icons/star-plus-outline.svg" alt="star icon" id="star-icon" class="main-icons">
+                    <img src="./assets/Icons/eye-plus-outline.svg" alt="watch-icon" id="watch-icon" class="main-icons">
+                    <img src="./assets/Icons/source-branch.svg" alt="share icon" id="share-icon" class="main-icons">
+                </div>
+            </div>
+            <div id="project6" class="main-left">
+                <div class="main-text" id="text6">
+                    <h2 class="project-header">text here</h2>
+                    <p class="project-text">more text here</p>
+                </div>
+                <div class="bookmarks" id="bookmark6">
+                    <img src="./assets/Icons/star-plus-outline.svg" alt="star icon" id="star-icon" class="main-icons">
+                    <img src="./assets/Icons/eye-plus-outline.svg" alt="watch-icon" id="watch-icon" class="main-icons">
+                    <img src="./assets/Icons/source-branch.svg" alt="share icon" id="share-icon" class="main-icons">
+                </div>
+            </div>
+        </div>
+        <div class="main-container" id="main-right">
+            <div class="main-right" id="main-right-head1">
+                <h2 class="project-header">Announcements</h2>
+            </div>
+            <div class="main-right" id="news-bar1">
+                <div class="news-bar1" id="news1">
+                    <h4 class="news-header">text here</h4>
+                    <p class="news-text">more text here</p>
+                </div>
+                <div class="news-bar1" id="news2">
+                    <h4 class="news-header">text here</h4>
+                    <p class="news-text">more text here</p>
+                </div>
+                <div class="news-bar1" id="news3">
+                    <h4 class="news-header">text here</h4>
+                    <p class="news-text">more text here</p>
+                </div>
+            </div>
+            <div class="main-right" id="main-right-head2">
+                <h2 class="project-header">Trending</h2>
+            </div>
+            <div class="main-right" id="news-bar2">
+                <div class="news-bar2" id="news4">
+                    <div class="news-icon" id="icon1">
+                        <img src="./assets/Icons/profile1.jpg" alt="user profile picture" class="profile-pics">
                     </div>
-                    <div class="news-bar2" id="news5">
-                        <div class="news-icon" id="icon2"></div>
-                        <div class="news-username" id="user2"></div>
+                    <div class="news-username" id="user1">
+                        <h5 class="user-tags">@jimmy</h5>
+                        <p class="trending-text">project here</p>
                     </div>
-                    <div class="news-bar2" id="news6">
-                        <div class="news-icon" id="icon3"></div>
-                        <div class="news-username" id="user3"></div>
+                </div>
+                <div class="news-bar2" id="news5">
+                    <div class="news-icon" id="icon2">
+                        <img src="./assets/Icons/profile2.jpg" alt="user profile picture" class="profile-pics">
                     </div>
-                    <div class="news-bar2" id="news7">
-                        <div class="news-icon" id="icon4"></div>
-                        <div class="news-username" id="user4"></div>
+                    <div class="news-username" id="user2">
+                        <h5 class="user-tags">@jimmy</h5>
+                        <p class="trending-text">project here</p>
+                    </div>
+                </div>
+                <div class="news-bar2" id="news6">
+                    <div class="news-icon" id="icon3">
+                        <img src="./assets/Icons/profile3.jpg" alt="user profile picture" class="profile-pics">
+                    </div>
+                    <div class="news-username" id="user3">
+                        <h5 class="user-tags">@jimmy</h5>
+                        <p class="trending-text">project here</p>
+                    </div>
+                </div>
+                <div class="news-bar2" id="news7">
+                    <div class="news-icon" id="icon4">
+                        <img src="./assets/Icons/profile4.png" alt="user profile picture" class="profile-pics">
+                    </div>
+                    <div class="news-username" id="user4">
+                        <h5 class="user-tags">@jimmy</h5>
+                        <p class="trending-text">project here</p>
                     </div>
                 </div>
             </div>
         </div>
-    
-    
+    </div>
+
+
 </body>
+
 </html>
