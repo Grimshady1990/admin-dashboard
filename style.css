@@ -1,10 +1,16 @@
 /* Global Selectors */
 
+h1,h2,h3,h4,h5 {
+    color: var(--head-main-titles);
+}
+
 html,
 body {
     padding: 0;
     margin: 0;
+    
     font-family: "Roboto Slab", sefif;
+    
 }
 
 body {
@@ -12,22 +18,24 @@ body {
     display: grid;
     grid-template-columns: 500px 1fr 1fr 1fr;
     grid-template-rows: 0.5fr 1fr 1fr 1fr;
-    border: 10px solid red;
-    gap: 5px;
+    
+    background-color: var(--body-bg);
 
 }
 
 /* Custom color properties */
 
 :root {
+    --body-bg: rgb(15, 4, 21);
     --btn-nav-bg: rgb(171, 54, 255);
-    --btn-nav-txt: rgb(0, 0, 0);
-    --head-main-bg: rgb(35, 11, 52);
+    --btn-nav-txt: rgb(255, 255, 255);
+    --head-main-bg: rgb(56, 17, 84);
     --head-main-titles: rgb(255, 255, 255);
-    --head-main-txt: rgb(189, 189, 189);
+    --head-main-txt: rgb(134, 134, 134);
     --box-shadow: rgb(218, 167, 255);
     --bottom-border: rgb(189, 189, 189);
     --left-border: rgb(189, 189, 189);
+    --search-input: rgb(189, 189, 189);
     
 }
 
@@ -44,7 +52,6 @@ body {
 /* Global Header Selectors */
 
 #header-container {
-    border: 5px solid blue;
     grid-area: 1/2/1/5;
     display: grid;
     grid-template-rows: 1fr 2fr;
@@ -53,14 +60,13 @@ body {
 /* Header Top Selectors */
 
 #header-top {
-    border: 5px solid green;
     display: grid;
     grid-template-columns: 1fr 100px 100px 300px;
 }
 
 /* Search Bar Container */
 #search-bar {
-    background-color: darkolivegreen;
+    background-color: var(--head-main-bg);
     display: flex;
     align-items: center;
     padding-left: 30px;
@@ -74,7 +80,7 @@ input {
 
 /* Notification Icon div */
 #notification-bell {
-    background-color: teal;
+    background-color: var(--head-main-bg);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -82,7 +88,7 @@ input {
 
 /* Profile Picture div */
 #profile-icon-sml {
-    background-color: beige;
+    background-color: var(--head-main-bg);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -91,7 +97,7 @@ input {
 
 /* UserName div */
 #username-sml {
-    background-color: fuchsia;
+    background-color: var(--head-main-bg);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -103,7 +109,6 @@ input {
 
 /* Main Container */
 #header-bottom {
-    border: 5px solid turquoise;
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 200px 1fr 180px 180px 180px;
@@ -113,7 +118,7 @@ input {
 /* Large Profile Picture div */
 #profile-icon-lrg {
     grid-area: 1/1/3/2;
-    background-color: orchid;
+    background-color: var(--head-main-bg);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -123,7 +128,7 @@ input {
 /* Large Username div */
 #username-lrg {
     grid-area: 2/2/1/2;
-    background-color: lavender;
+    background-color: var(--head-main-bg);
     display: flex;
     flex-direction: column;    
     justify-content: center;    
@@ -140,15 +145,15 @@ input {
 /* Button divs */
 #btn-new {
 
-    background-color: salmon;
+    background-color: var(--head-main-bg);
     grid-row: span 2;
 }
 #btn-upload {
-    background-color: cadetblue;
+    background-color: var(--head-main-bg);
     grid-row: span 2;
 }
 #btn-share {
-    background-color: peru;
+    background-color: var(--head-main-bg);
     grid-row: span 2;
 }
 
@@ -170,14 +175,16 @@ input {
     width: 120px;
     border-radius: 30px;
     border: none;
-    font-size: large;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: var(--btn-nav-bg);
+    color: var(--btn-nav-txt);
 }
 
 /* Nav Selectors */
 
 /* Main nav container */
 #nav-container {
-    border: 5px solid violet;
     grid-area: 1/1/5/2;
 
     display: grid;
@@ -186,42 +193,48 @@ input {
 
 /* Selectors for all nav sub containers */
 #nav-title {
-    background-color: darkgoldenrod;
+    background-color: var(--btn-nav-bg);
     gap: 20px;
 }
 #nav-home {
-    background-color: cornflowerblue;
+    background-color: var(--btn-nav-bg);
 }
 #nav-profile {
-    background-color: darkblue;
+    background-color: var(--btn-nav-bg);
 }
-#nav-messages {
-    background-color: lightsalmon;
+#nav-message {
+    background-color: var(--btn-nav-bg);
 }
 #nav-history {
-    background-color: lawngreen;
+    background-color: var(--btn-nav-bg);
 }
 #nav-tasks {
-    background-color: aqua;
+    background-color: var(--btn-nav-bg);
 }
 #nav-communities {
-    background-color: purple;
+    background-color: var(--btn-nav-bg);
 }
 #nav-settings {
-    background-color: red;
+    background-color: var(--btn-nav-bg);
 }
 #nav-support {
-    background-color: peachpuff;
+    background-color: var(--btn-nav-bg);
 }
 #nav-privacy {
-    background-color: yellowgreen;
+    background-color: var(--btn-nav-bg);
+}
+#empty-slot {
+    background-color: var(--btn-nav-bg);
 }
 #empty-space {
-    background-color: blueviolet;
+    background-color: var(--btn-nav-bg);
 }
+
 .nav-icons {
-    height: 50px
+    height: 50px;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(1%) hue-rotate(286deg) brightness(101%) contrast(102%);
 }
+
 
 /* Nav icon styles */
 #orbit-icon {
@@ -234,19 +247,28 @@ input {
     padding-left: 30px;
 }
 
+.nav-txt {
+    color: var(--btn-nav-txt);
+}
+
 
 
 /* Main Selectors */
 
 /* Root container of main content section */
 #main-container {
-    border: 5px solid yellow;
     grid-area: 2/2/5/5;
     display: grid;
     grid-template-columns: 1fr 500px;
     margin-bottom: 200px;
     margin-left: 20px;
     margin-right: 40px;   
+}
+
+#project2,
+#project4,
+#project6 {
+    margin-right: 25px;
 }
 
 /* Adds line separator to news articles */
@@ -268,17 +290,25 @@ input {
 
 /* Child container of root container */
 #main-left {
-    border: 5px solid teal;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 100px 1fr 1fr 1fr;
-    gap: 50px;   
+    gap: 40px;   
 }
 
 /* Header of the left child */
 #main-left-head {
-    background-color: blueviolet;
+    background-color: var(--body-bg);
     grid-area: 1/1/2/3;
+    display: flex;
+    align-items: end;
+    margin-bottom: 0;
+    line-height: 0;
+    
+}
+
+#main-content-header {
+    margin-bottom: 0;
 }
 
 /* Selector for project divs Header text */
@@ -288,7 +318,7 @@ input {
 
 /* Class Selector for project divs */
 .main-left {
-    background-color: aquamarine;
+    background-color: var(--head-main-bg);
     gap: 5px;
     display: grid;
     grid-template-rows: 3fr 1fr;
@@ -308,7 +338,7 @@ input {
 
 /* Selects bookmark divs */
 .bookmarks {
-    background-color: indianred;
+    background-color: var(--head-main-bg);
     display: flex;
     align-items: end;
     justify-content: end;
@@ -319,20 +349,25 @@ input {
 
 /* Right child of root container */
 #main-right {
-    border: 5px solid lightcoral;
     display: grid;
     grid-template-rows: 100px 1fr 100px 1fr;
 }
 
 /* Selects the header div of right child */
 #main-right-head1 {
-    background-color: burlywood;
+    background-color: var(--body-bg);
+    display: flex;
+    align-items: end;
+    
     
 }
 
 /* Selects the text inside right-head1 */
-.project-header {
-    margin-left: 30px;
+#announcements-head {
+    
+    margin-bottom: 0;
+    line-height: 0;
+
 }
 
 /* Consistent size for main container headers */
@@ -342,20 +377,21 @@ input {
 
 /* Selects the news div */
 #news-bar1 {
-    background-color: crimson;
+    background-color: var(--head-main-bg);
     display: grid;
     grid-template-rows: repeat(3, 1fr);
+    margin-top: 40px;
 }
 
 /* Child containers of news-bar1 */
 #news1 {
-    background-color: indigo;
+    background-color: var(--head-main-bg);
 }
 #news2 {
-    background-color: rgb(7, 130, 0);
+    background-color: var(--head-main-bg);
 }
 #news3 {
-    background-color: rgb(0, 11, 130);
+    background-color: var(--head-main-bg);
 }
 
 /* Selects the text inside the above children */
@@ -371,10 +407,10 @@ input {
 
 /* Header selector of the trending section */
 #main-right-head2 {
-    background-color: chartreuse;
+    background-color: var(--body-bg);
 }
 #news-bar2 {
-    background-color: darkmagenta;
+    background-color: var(--head-main-bg);
     display: grid;
     grid-template-rows: repeat(4, 1fr);
 }
@@ -388,30 +424,30 @@ input {
 
 /* Selects the divs containing the trending profile images */
 #icon1 {
-    background-color: indigo;
+    background-color: var(--head-main-bg);
 }
 #icon2 {
-    background-color: rgb(130, 0, 102);
+    background-color: var(--head-main-bg);
 }
 #icon3 {
-    background-color: rgb(0, 130, 87);
+    background-color: var(--head-main-bg);
 }
 #icon4 {
-    background-color: rgb(2, 0, 130);
+    background-color: var(--head-main-bg);
 }
 
 /* Selects the divs that contain the text in the trending section */
 #user1 {
-    background-color: rgb(150, 105, 181);
+    background-color: var(--head-main-bg);
 }
 #user2 {
-    background-color: rgb(84, 128, 81);
+    background-color: var(--head-main-bg);
 }
 #user3 {
-    background-color: rgb(65, 71, 132);
+    background-color: var(--head-main-bg);
 }
 #user4 {
-    background-color: rgb(125, 67, 78);
+    background-color: var(--head-main-bg);
 }
 
 
@@ -438,4 +474,12 @@ input {
 /* Removes default margins from trending text */
 .user-tags, .trending-text{
     margin: 0;
+}
+
+p {
+    color: var(--head-main-txt);
+}
+
+.trending-text {
+    font-size: 25px;
 }
