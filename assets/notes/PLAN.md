@@ -64,6 +64,6 @@ Now I will move on to collecting all the assets for the project. I will organize
 
 # Part 4
 
-Okay now I have assets its time to start putting everything into place, now I don't really have a plan for this so best just get place stuff.
+Now everything is in place its time to size and align everything, but before we do that its would be a good idea to choose a font as different fonts come in different sizes.
 
 
