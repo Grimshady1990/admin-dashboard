@@ -72,6 +72,10 @@ I've settled on roboto slab as the font, now I can get to work positioning and s
 
 Now that everything is in place I have made quite a mess of the CSS so before I can continue I will reorganize the css code and add comments so I don't get confused.
 
-The html looks okay but we will still give it a little spring clean
+The html looks okay but we will still give it a little spring clean.
+
+# Part 6
+
+Now we move on to coloring everything. color is something I seem to struggle with so I want to take a little time with this using custom vars. The goal is to give myself a good level of control of the colorization so I can experiment
 
 
