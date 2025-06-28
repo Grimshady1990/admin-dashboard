@@ -17,6 +17,20 @@ body {
 
 }
 
+/* Custom color properties */
+
+:root {
+    --btn-nav-bg: rgb(171, 54, 255);
+    --btn-nav-txt: rgb(0, 0, 0);
+    --head-main-bg: rgb(35, 11, 52);
+    --head-main-titles: rgb(255, 255, 255);
+    --head-main-txt: rgb(189, 189, 189);
+    --box-shadow: rgb(218, 167, 255);
+    --bottom-border: rgb(189, 189, 189);
+    --left-border: rgb(189, 189, 189);
+    
+}
+
 /* Selects All Profile Pictures */
 .profile-pics {
     height: 80px;

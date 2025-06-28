@@ -76,6 +76,10 @@ The html looks okay but we will still give it a little spring clean.
 
 # Part 6
 
-Now we move on to coloring everything. color is something I seem to struggle with so I want to take a little time with this using custom vars. The goal is to give myself a good level of control of the colorization so I can experiment
+Now we move on to coloring everything. color is something I seem to struggle with so I want to take a little time with this using custom vars. The goal is to give myself a good level of control of the colorization so I can experiment.
+
+### Color Planning
+
+for this project I want to go with a dark theme I would like the primary color to be purple which I will use for the nav bar and the buttons and I want to use a blend of dark grey and very dark purple for the background, headers and content divs
 
 
