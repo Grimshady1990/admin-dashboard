@@ -66,4 +66,6 @@ Now I will move on to collecting all the assets for the project. I will organize
 
 Now everything is in place its time to size and align everything, but before we do that its would be a good idea to choose a font as different fonts come in different sizes.
 
+I've settled on roboto slab as the font, now I can get to work positioning and sizing all the elements
+
 
