@@ -1,3 +1,5 @@
+/* Global Selectors */
+
 html,
 body {
     padding: 0;
@@ -15,24 +17,26 @@ body {
 
 }
 
+/* Selects All Profile Pictures */
+.profile-pics {
+    height: 80px;
+    border-radius: 50px;
+}
+
 
 
 /* Header Selectors */
 
+/* Global Header Selectors */
+
 #header-container {
     border: 5px solid blue;
     grid-area: 1/2/1/5;
-
     display: grid;
     grid-template-rows: 1fr 2fr;
 }
 
-input {
-    width: 90%;
-    height: 45px;
-    border: none;
-    border-radius: 20px;
-}
+/* Header Top Selectors */
 
 #header-top {
     border: 5px solid green;
@@ -40,13 +44,21 @@ input {
     grid-template-columns: 1fr 100px 100px 300px;
 }
 
+/* Search Bar Container */
 #search-bar {
     background-color: darkolivegreen;
     display: flex;
     align-items: center;
     padding-left: 30px;
 }
+input {
+    width: 90%;
+    height: 45px;
+    border: none;
+    border-radius: 20px;
+}
 
+/* Notification Icon div */
 #notification-bell {
     background-color: teal;
     display: flex;
@@ -54,6 +66,7 @@ input {
     justify-content: center;
 }
 
+/* Profile Picture div */
 #profile-icon-sml {
     background-color: beige;
     display: flex;
@@ -62,6 +75,7 @@ input {
 
 }
 
+/* UserName div */
 #username-sml {
     background-color: fuchsia;
     display: flex;
@@ -69,12 +83,11 @@ input {
     justify-content: center;
 }
 
-.profile-pics {
-    height: 80px;
-    border-radius: 50px;
-}
+
 
 /* Header Bottom Selectors */
+
+/* Main Container */
 #header-bottom {
     border: 5px solid turquoise;
     display: grid;
@@ -83,6 +96,7 @@ input {
     align-content: center;
 }
 
+/* Large Profile Picture div */
 #profile-icon-lrg {
     grid-area: 1/1/3/2;
     background-color: orchid;
@@ -91,20 +105,17 @@ input {
     justify-content: center;
 }
 
-#hi-there {
-    background-color: wheat;
-}
 
+/* Large Username div */
 #username-lrg {
     grid-area: 2/2/1/2;
     background-color: lavender;
     display: flex;
-    flex-direction: column;
-    
-    justify-content: center;
-    
+    flex-direction: column;    
+    justify-content: center;    
 }
 
+/* Removes Default Margins */
 #username-txt-lrg{
     margin-top: 0;
 }
@@ -112,32 +123,34 @@ input {
     margin-bottom: 0;
 }
 
+/* Button divs */
 #btn-new {
 
     background-color: salmon;
     grid-row: span 2;
 }
-
 #btn-upload {
     background-color: cadetblue;
     grid-row: span 2;
 }
-
 #btn-share {
     background-color: peru;
     grid-row: span 2;
 }
 
+/* Selector for large profile pic to override global settings */
 #profile-pic-lrg {
     height: 110px;
 }
 
+/* Selector for all button divs */
 .header-button{
     display:flex;
     justify-content: center;
     align-items: center;
 }
 
+/* Global button styles */
 .buttons {
     height: 50px;
     width: 120px;
@@ -148,6 +161,7 @@ input {
 
 /* Nav Selectors */
 
+/* Main nav container */
 #nav-container {
     border: 5px solid violet;
     grid-area: 1/1/5/2;
@@ -156,66 +170,53 @@ input {
     grid-template-rows: 2fr 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr 2fr 1.2fr 1.2fr 1.2fr 10fr;
 }
 
+/* Selectors for all nav sub containers */
 #nav-title {
     background-color: darkgoldenrod;
     gap: 20px;
-
 }
-
 #nav-home {
     background-color: cornflowerblue;
 }
-
 #nav-profile {
     background-color: darkblue;
 }
-
 #nav-messages {
     background-color: lightsalmon;
 }
-
 #nav-history {
     background-color: lawngreen;
 }
-
 #nav-tasks {
     background-color: aqua;
 }
-
 #nav-communities {
     background-color: purple;
 }
-
 #nav-settings {
     background-color: red;
 }
-
 #nav-support {
     background-color: peachpuff;
 }
-
 #nav-privacy {
     background-color: yellowgreen;
 }
-
 #empty-space {
     background-color: blueviolet;
 }
-
 .nav-icons {
     height: 50px
 }
 
+/* Nav icon styles */
 #orbit-icon {
-    height: 100px;
-    
+    height: 100px;   
 }
-
 .nav-container {
     display: flex;
     align-items: center;
     gap: 30px;
-
     padding-left: 30px;
 }
 
@@ -223,164 +224,184 @@ input {
 
 /* Main Selectors */
 
-#news1,
-#news2,
-#news3 {
-    border-bottom: 5px solid gainsboro;
-
-}
-.news-bar1{
-    margin: 30px;
-}
-
-.main-icons {
-    height: 50px;
-}
-
+/* Root container of main content section */
 #main-container {
     border: 5px solid yellow;
     grid-area: 2/2/5/5;
     display: grid;
     grid-template-columns: 1fr 500px;
-
     margin-bottom: 200px;
-    
-
-    
+    margin-left: 20px;
+    margin-right: 40px;   
 }
 
+/* Adds line separator to news articles */
+#news1,
+#news2,
+#news3 {
+    border-bottom: 5px solid gainsboro;
+}
+
+/* Global selector for all news article divs */
+.news-bar1{
+    margin: 30px;
+}
+
+/* Global selector for bookmark icons */
+.main-icons {
+    height: 50px;
+}
+
+/* Child container of root container */
 #main-left {
     border: 5px solid teal;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 100px 1fr 1fr 1fr;
-    gap: 50px;
-    
+    gap: 50px;   
 }
 
-
-
+/* Header of the left child */
 #main-left-head {
     background-color: blueviolet;
     grid-area: 1/1/2/3;
 }
 
+/* Selector for project divs Header text */
+.project-head {
+    margin-bottom: 0;
+}
+
+/* Class Selector for project divs */
 .main-left {
     background-color: aquamarine;
     gap: 5px;
     display: grid;
     grid-template-rows: 3fr 1fr;
-    margin-left: 20px;
-    margin-right: 20px;
+    
 }
 
+/* Selector for all text in project divs */
 .main-text {
     margin-left: 20px;
 }
 
-#main-content-header{
-    margin-left: 20px;
+/* Selects the text below the header of project divs */
+.project-text {
+    font-size: 20px;
+    margin-top: 0;
 }
 
-#main-left-head {
-    margin-left: 20px;
-    
-}
-
+/* Selects bookmark divs */
 .bookmarks {
     background-color: indianred;
     display: flex;
     align-items: end;
     justify-content: end;
     gap: 40px;
-
     margin-bottom: 50px;
     margin-right: 50px;
 }
 
-
-
+/* Right child of root container */
 #main-right {
     border: 5px solid lightcoral;
     display: grid;
     grid-template-rows: 100px 1fr 100px 1fr;
 }
 
+/* Selects the header div of right child */
 #main-right-head1 {
     background-color: burlywood;
     
 }
 
+/* Selects the text inside right-head1 */
 .project-header {
     margin-left: 30px;
 }
 
+/* Consistent size for main container headers */
+.project-header, .project-head {
+    font-size: 30px;
+}
+
+/* Selects the news div */
 #news-bar1 {
     background-color: crimson;
     display: grid;
     grid-template-rows: repeat(3, 1fr);
 }
 
+/* Child containers of news-bar1 */
+#news1 {
+    background-color: indigo;
+}
+#news2 {
+    background-color: rgb(7, 130, 0);
+}
+#news3 {
+    background-color: rgb(0, 11, 130);
+}
+
+/* Selects the text inside the above children */
+.news-header{
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 30px;
+}
+.news-text{
+    margin-top: 0;
+    font-size: 20px;
+}
+
+/* Header selector of the trending section */
 #main-right-head2 {
     background-color: chartreuse;
 }
-
 #news-bar2 {
     background-color: darkmagenta;
     display: grid;
     grid-template-rows: repeat(4, 1fr);
 }
 
+/* Aligns the divs in the trending section */
 .news-bar2 {
     display: grid;
     grid-template-columns: 150px 1fr;
     
 }
 
+/* Selects the divs containing the trending profile images */
 #icon1 {
     background-color: indigo;
 }
-
 #icon2 {
     background-color: rgb(130, 0, 102);
 }
-
 #icon3 {
     background-color: rgb(0, 130, 87);
 }
-
 #icon4 {
     background-color: rgb(2, 0, 130);
 }
 
+/* Selects the divs that contain the text in the trending section */
 #user1 {
     background-color: rgb(150, 105, 181);
 }
-
 #user2 {
     background-color: rgb(84, 128, 81);
 }
-
 #user3 {
     background-color: rgb(65, 71, 132);
 }
-
 #user4 {
     background-color: rgb(125, 67, 78);
 }
 
-#news1 {
-    background-color: indigo;
-}
 
-#news2 {
-    background-color: rgb(7, 130, 0);
-}
-
-#news3 {
-    background-color: rgb(0, 11, 130);
-}
-
+/* Class to select all the above #icon id's */
 .news-icon {
     display: flex;
     align-items: center;
@@ -390,13 +411,17 @@ input {
     
 }
 
+/* Class to select all the above #user id's */
 .news-username {
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: center;
+    font-size: 30px;
+    line-height: 100%;
 }
 
+/* Removes default margins from trending text */
 .user-tags, .trending-text{
     margin: 0;
 }

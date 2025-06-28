@@ -68,4 +68,10 @@ Now everything is in place its time to size and align everything, but before we 
 
 I've settled on roboto slab as the font, now I can get to work positioning and sizing all the elements
 
+# Part 5
+
+Now that everything is in place I have made quite a mess of the CSS so before I can continue I will reorganize the css code and add comments so I don't get confused.
+
+The html looks okay but we will still give it a little spring clean
+
 
