@@ -79,7 +79,7 @@ input {
     border: 5px solid turquoise;
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: 200px 1fr 250px 250px 250px;
+    grid-template-columns: 200px 1fr 180px 180px 180px;
     align-content: center;
 }
 
@@ -130,6 +130,20 @@ input {
 
 #profile-pic-lrg {
     height: 110px;
+}
+
+.header-button{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons {
+    height: 50px;
+    width: 120px;
+    border-radius: 30px;
+    border: none;
+    font-size: large;
 }
 
 /* Nav Selectors */
@@ -228,6 +242,11 @@ input {
     grid-area: 2/2/5/5;
     display: grid;
     grid-template-columns: 1fr 500px;
+
+    margin-bottom: 200px;
+    
+
+    
 }
 
 #main-left {
@@ -235,7 +254,8 @@ input {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 100px 1fr 1fr 1fr;
-    gap: 10px;
+    gap: 50px;
+    
 }
 
 
@@ -250,10 +270,32 @@ input {
     gap: 5px;
     display: grid;
     grid-template-rows: 3fr 1fr;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.main-text {
+    margin-left: 20px;
+}
+
+#main-content-header{
+    margin-left: 20px;
+}
+
+#main-left-head {
+    margin-left: 20px;
+    
 }
 
 .bookmarks {
     background-color: indianred;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    gap: 40px;
+
+    margin-bottom: 50px;
+    margin-right: 50px;
 }
 
 
@@ -266,6 +308,11 @@ input {
 
 #main-right-head1 {
     background-color: burlywood;
+    
+}
+
+.project-header {
+    margin-left: 30px;
 }
 
 #news-bar1 {
@@ -286,7 +333,8 @@ input {
 
 .news-bar2 {
     display: grid;
-    grid-template-columns: 200px 1fr;
+    grid-template-columns: 150px 1fr;
+    
 }
 
 #icon1 {
@@ -331,4 +379,24 @@ input {
 
 #news3 {
     background-color: rgb(0, 11, 130);
+}
+
+.news-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
+    
+    
+}
+
+.news-username {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.user-tags, .trending-text{
+    margin: 0;
 }
