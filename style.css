@@ -31,10 +31,10 @@ body {
     --btn-nav-txt: rgb(255, 255, 255);
     --head-main-bg: rgb(71, 71, 71);
     --head-main-titles: rgb(255, 255, 255);
-    --head-main-txt: rgb(26, 41, 80);
+    --head-main-txt: rgb(150, 151, 151);
     --box-shadow: rgba(218, 167, 255, 0.328);
     --bottom-border: rgb(189, 189, 189);
-    --left-border: rgba(255, 255, 106, 0.766);
+    --left-border: rgba(229, 255, 83, 0.766);
     --search-input: rgb(61, 61, 61);
     
 }
@@ -62,7 +62,8 @@ body {
 
 #header-top {
     display: grid;
-    grid-template-columns: 1fr 100px 100px 300px;
+    grid-template-columns: 1fr 100px 100px 350px;
+    
 }
 
 /* Search Bar Container */
@@ -73,11 +74,15 @@ body {
     padding-left: 30px;
 }
 input {
-    width: 90%;
+    width: 80%;
     height: 45px;
     border: none;
     border-radius: 20px;
     background-color: var(--search-input);
+    font-size: 40px;
+    color: var(--head-main-titles);
+    padding-left: 1ch;
+    margin-left: 1ch;
 }
 
 /* Notification Icon div */
@@ -113,7 +118,7 @@ input {
 #header-bottom {
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: 200px 1fr 180px 180px 180px;
+    grid-template-columns: 200px 1fr 300px 300px 300px;
     align-content: center;
 }
 
@@ -149,6 +154,7 @@ input {
 
     background-color: var(--head-main-bg);
     grid-row: span 2;
+    
 }
 #btn-upload {
     background-color: var(--head-main-bg);
@@ -157,6 +163,7 @@ input {
 #btn-share {
     background-color: var(--head-main-bg);
     grid-row: span 2;
+    
 }
 
 /* Selector for large profile pic to override global settings */
@@ -173,15 +180,16 @@ input {
 
 /* Global button styles */
 .buttons {
-    height: 50px;
-    width: 120px;
+    height: 70px;
+    width: 180px;
     border-radius: 30px;
     border: none;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
     background-color: var(--btn-nav-bg);
     color: var(--btn-nav-txt);
     transition: 0.5s;
+    
 }
 
 /* Nav Selectors */
