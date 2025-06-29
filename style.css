@@ -26,16 +26,16 @@ body {
 /* Custom color properties */
 
 :root {
-    --body-bg: rgb(15, 4, 21);
+    --body-bg: rgb(24, 24, 24);
     --btn-nav-bg: rgb(171, 54, 255);
     --btn-nav-txt: rgb(255, 255, 255);
-    --head-main-bg: rgb(56, 17, 84);
+    --head-main-bg: rgb(71, 71, 71);
     --head-main-titles: rgb(255, 255, 255);
-    --head-main-txt: rgb(134, 134, 134);
+    --head-main-txt: rgb(26, 41, 80);
     --box-shadow: rgb(218, 167, 255);
     --bottom-border: rgb(189, 189, 189);
     --left-border: rgb(189, 189, 189);
-    --search-input: rgb(189, 189, 189);
+    --search-input: rgb(61, 61, 61);
     
 }
 
@@ -76,6 +76,7 @@ input {
     height: 45px;
     border: none;
     border-radius: 20px;
+    background-color: var(--search-input);
 }
 
 /* Notification Icon div */
