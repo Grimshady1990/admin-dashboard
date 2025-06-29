@@ -9,12 +9,12 @@ body {
     padding: 0;
     margin: 0;
     
-    font-family: "Roboto Slab", sefif;
+    font-family: "Roboto Slab", serif;
     
 }
 
 body {
-    height: 99vh;
+    height: 100vh;
     display: grid;
     grid-template-columns: 500px 1fr 1fr 1fr;
     grid-template-rows: 0.5fr 1fr 1fr 1fr;
@@ -32,9 +32,9 @@ body {
     --head-main-bg: rgb(71, 71, 71);
     --head-main-titles: rgb(255, 255, 255);
     --head-main-txt: rgb(26, 41, 80);
-    --box-shadow: rgb(218, 167, 255);
+    --box-shadow: rgba(218, 167, 255, 0.328);
     --bottom-border: rgb(189, 189, 189);
-    --left-border: rgb(189, 189, 189);
+    --left-border: rgba(255, 255, 106, 0.766);
     --search-input: rgb(61, 61, 61);
     
 }
@@ -55,6 +55,7 @@ body {
     grid-area: 1/2/1/5;
     display: grid;
     grid-template-rows: 1fr 2fr;
+    box-shadow: 0 2px 15px var(--box-shadow);
 }
 
 /* Header Top Selectors */
@@ -180,6 +181,7 @@ input {
     font-weight: bold;
     background-color: var(--btn-nav-bg);
     color: var(--btn-nav-txt);
+    transition: 0.5s;
 }
 
 /* Nav Selectors */
@@ -190,6 +192,10 @@ input {
 
     display: grid;
     grid-template-rows: 2fr 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr 2fr 1.2fr 1.2fr 1.2fr 10fr;
+}
+
+.main-left {
+    border-radius: 15px;
 }
 
 /* Selectors for all nav sub containers */
@@ -232,7 +238,7 @@ input {
 }
 
 .nav-icons {
-    height: 50px;
+    height: 40px;
     filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(1%) hue-rotate(286deg) brightness(101%) contrast(102%);
 }
 
@@ -263,7 +269,7 @@ input {
     grid-template-columns: 1fr 500px;
     margin-bottom: 200px;
     margin-left: 20px;
-    margin-right: 40px;   
+    margin-right: 40px; 
 }
 
 #project2,
@@ -276,7 +282,7 @@ input {
 #news1,
 #news2,
 #news3 {
-    border-bottom: 5px solid gainsboro;
+    border-bottom: 1.5px solid gainsboro;
 }
 
 /* Global selector for all news article divs */
@@ -286,7 +292,7 @@ input {
 
 /* Global selector for bookmark icons */
 .main-icons {
-    height: 50px;
+    height: 40px;
 }
 
 /* Child container of root container */
@@ -299,7 +305,7 @@ input {
 
 /* Header of the left child */
 #main-left-head {
-    background-color: var(--body-bg);
+    background-color:none;
     grid-area: 1/1/2/3;
     display: flex;
     align-items: end;
@@ -323,12 +329,17 @@ input {
     gap: 5px;
     display: grid;
     grid-template-rows: 3fr 1fr;
+    box-shadow: 10px 10px 5px var(--box-shadow);
+    border-left: 20px solid var(--left-border);
+    
+    
     
 }
 
 /* Selector for all text in project divs */
 .main-text {
     margin-left: 20px;
+    
 }
 
 /* Selects the text below the header of project divs */
@@ -352,11 +363,13 @@ input {
 #main-right {
     display: grid;
     grid-template-rows: 100px 1fr 100px 1fr;
+    
+    
 }
 
 /* Selects the header div of right child */
 #main-right-head1 {
-    background-color: var(--body-bg);
+    background-color: none;
     display: flex;
     align-items: end;
     
@@ -382,6 +395,8 @@ input {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     margin-top: 40px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 5px var(--box-shadow);
 }
 
 /* Child containers of news-bar1 */
@@ -390,9 +405,11 @@ input {
 }
 #news2 {
     background-color: var(--head-main-bg);
+    margin-top: 0;
 }
 #news3 {
     background-color: var(--head-main-bg);
+    margin-top: 0;
 }
 
 /* Selects the text inside the above children */
@@ -408,12 +425,22 @@ input {
 
 /* Header selector of the trending section */
 #main-right-head2 {
-    background-color: var(--body-bg);
+    background-color: none;
+    display: flex;
+    align-items: end;
 }
+
+#trending-head {
+    margin-bottom: 20px;
+}
+
 #news-bar2 {
+    border-radius: 15px;
     background-color: var(--head-main-bg);
     display: grid;
     grid-template-rows: repeat(4, 1fr);
+    box-shadow: 10px 10px 5px var(--box-shadow);
+    
 }
 
 /* Aligns the divs in the trending section */
@@ -421,11 +448,13 @@ input {
     display: grid;
     grid-template-columns: 150px 1fr;
     
+    
 }
 
 /* Selects the divs containing the trending profile images */
 #icon1 {
     background-color: var(--head-main-bg);
+    border-radius: 15px 0 0 0;
 }
 #icon2 {
     background-color: var(--head-main-bg);
@@ -435,11 +464,13 @@ input {
 }
 #icon4 {
     background-color: var(--head-main-bg);
+    border-radius: 0 0 0 15px;
 }
 
 /* Selects the divs that contain the text in the trending section */
 #user1 {
     background-color: var(--head-main-bg);
+    border-radius: 0 15px 0 0;
 }
 #user2 {
     background-color: var(--head-main-bg);
@@ -449,6 +480,7 @@ input {
 }
 #user4 {
     background-color: var(--head-main-bg);
+    border-radius: 0 0 15px 0;
 }
 
 
@@ -483,4 +515,43 @@ p {
 
 .trending-text {
     font-size: 25px;
+    
+}
+
+#star-icon {
+    transition: 0.5s;
+}
+
+#star-icon:hover {
+    filter: brightness(0) saturate(100%) invert(95%) sepia(64%) saturate(2647%) hue-rotate(359deg) brightness(105%) contrast(100%) drop-shadow(0 0 0.75rem yellow);
+    
+    
+}
+
+#watch-icon {
+    transition: 0.5s;
+}
+
+#watch-icon:hover {
+    filter: brightness(0) saturate(100%) invert(69%) sepia(86%) saturate(3836%) hue-rotate(157deg) brightness(104%) contrast(102%) drop-shadow(0 0 0.75rem rgb(0, 197, 255));
+    
+}
+
+#share-icon {
+    transition: 0.5s;
+}
+
+#share-icon:hover {
+    filter: brightness(0) saturate(100%) invert(88%) sepia(22%) saturate(3182%) hue-rotate(73deg) brightness(98%) contrast(115%) drop-shadow(0 0 0.75rem rgb(0, 255, 94));
+}
+
+.buttons:hover {
+
+    background-color: rgb(125, 38, 188);
+    
+}
+
+.buttons:active{
+    transition: 0.1s;
+    background-color: rgb(153, 119, 178);
 }
