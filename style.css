@@ -62,7 +62,8 @@ body {
 
 #header-top {
     display: grid;
-    grid-template-columns: 1fr 100px 100px 350px;
+    grid-template-columns: 1fr 100px 100px 350px 100px;
+    background-color: var(--head-main-bg);
     
 }
 
@@ -118,8 +119,9 @@ input {
 #header-bottom {
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: 200px 1fr 300px 300px 300px;
+    grid-template-columns: 200px 1fr 200px 200px 200px 100px;
     align-content: center;
+    background-color: var(--head-main-bg);
 }
 
 /* Large Profile Picture div */
@@ -243,6 +245,8 @@ input {
 }
 #empty-space {
     background-color: var(--btn-nav-bg);
+    display: flex;
+    
 }
 
 .nav-icons {
