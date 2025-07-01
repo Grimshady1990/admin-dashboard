@@ -62,7 +62,7 @@ body {
 
 #header-top {
     display: grid;
-    grid-template-columns: 1fr 100px 100px 350px 100px;
+    grid-template-columns: 1fr 100px 100px 250px 100px;
     background-color: var(--head-main-bg);
     
 }
@@ -119,7 +119,7 @@ input {
 #header-bottom {
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: 200px 1fr 200px 200px 200px 100px;
+    grid-template-columns: 200px 1fr 240px 240px 240px 80px;
     align-content: center;
     background-color: var(--head-main-bg);
 }
@@ -182,7 +182,7 @@ input {
 
 /* Global button styles */
 .buttons {
-    height: 70px;
+    height: 60px;
     width: 180px;
     border-radius: 30px;
     border: none;
@@ -282,6 +282,7 @@ input {
     margin-bottom: 200px;
     margin-left: 20px;
     margin-right: 40px; 
+    
 }
 
 #project2,
@@ -310,9 +311,10 @@ input {
 /* Child container of root container */
 #main-left {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 100px 1fr 1fr 1fr;
     gap: 40px;   
+    
 }
 
 /* Header of the left child */
@@ -333,6 +335,7 @@ input {
 /* Selector for project divs Header text */
 .project-head {
     margin-bottom: 0;
+    
 }
 
 /* Class Selector for project divs */
@@ -343,6 +346,8 @@ input {
     grid-template-rows: 3fr 1fr;
     box-shadow: 10px 10px 5px var(--box-shadow);
     border-left: 20px solid var(--left-border);
+    min-width: 500px;
+ 
     
     
     
@@ -356,7 +361,7 @@ input {
 
 /* Selects the text below the header of project divs */
 .project-text {
-    font-size: 20px;
+    font-size: 25px;
     margin-top: 0;
 }
 
@@ -432,7 +437,7 @@ input {
 }
 .news-text{
     margin-top: 0;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 /* Header selector of the trending section */
@@ -452,6 +457,9 @@ input {
     display: grid;
     grid-template-rows: repeat(4, 1fr);
     box-shadow: 10px 10px 5px var(--box-shadow);
+
+
+    
     
 }
 
@@ -467,6 +475,7 @@ input {
 #icon1 {
     background-color: var(--head-main-bg);
     border-radius: 15px 0 0 0;
+    
 }
 #icon2 {
     background-color: var(--head-main-bg);
